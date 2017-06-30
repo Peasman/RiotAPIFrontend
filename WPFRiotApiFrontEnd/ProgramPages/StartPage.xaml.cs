@@ -22,8 +22,15 @@ namespace RiotAPIFrontEnd
         Window mainWindow;
         public StartPage(Window pWindow)
         {
+           
             mainWindow = pWindow;
             InitializeComponent();
+            regions.Items.Add("EUW");
+            regions.Items.Add("NA");
+            regions.Items.Add("KR");
+            regions.Items.Add("EUNE");
+            regions.Items.Add("TR");
+            regions.SelectedItem = regions.Items.GetItemAt(0);
         }
         public void clearContent(object sender, RoutedEventArgs e)
         {
@@ -33,7 +40,9 @@ namespace RiotAPIFrontEnd
         }
         private void findSummoner(object sender, RoutedEventArgs e)
         {
-            mainWindow.Content = new MainPage(mainWindow);
+            String name = summonerName.Text;
+            String region = regions.SelectedItem as String;
+            mainWindow.Content = new MainPage(mainWindow, name, region);
         }
     }
 }

@@ -81,7 +81,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Application\StandardList.cs" />
-    <Compile Include="Application\Program.cs" />
+    <Compile Include="Application\Main.cs" />
     <Page Include="ProgramPages\MatchPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -24,17 +24,24 @@ namespace RiotAPIFrontEnd
     {
         Main m;
         Window mainWindow;
+        public MainPage(Window pWindow, String name, String region)
+        {
+            mainWindow = pWindow;
+            InitializeComponent();
+            m = new Main(this);
+            Summoner s = m.receiveSummoner(name,region);
+            summonerName.Content = s.name;
+            profileIcon = new Image() { Source = new BitmapImage(new ImageDownloader().downloadImage(s.profileIconId.ToString(), ImageDownloader.PROFILE_ICON).UriSource) };
+            
+        }
         public MainPage(Window pWindow)
         {
             mainWindow = pWindow;
             InitializeComponent();
-            //m = new Main(this);
         }
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            m.sendMessage("getSummoner peasman euw");
-            String receive;
-            Thread t = new Thread(m.receiveSummoner);
+           
         }
 
         private void NextPage_Click(object sender, RoutedEventArgs e)

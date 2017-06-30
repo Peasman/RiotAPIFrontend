@@ -9,7 +9,7 @@ namespace Models.Summoner
     {
         public long Id { get; set; }
         public long accountId { get; set; }
-        public int profileIcon { get; set; }
+        public Int32 profileIconId { get; set; }
         public long revisionDate { get; set; }
         public String name { get; set; }
         public int summonerLevel { get; set; }

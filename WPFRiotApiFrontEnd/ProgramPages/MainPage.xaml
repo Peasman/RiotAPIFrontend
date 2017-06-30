@@ -21,6 +21,7 @@
         <Button x:Name="button" Grid.Row="0" Grid.Column ="1" Content="SummonerLookup" HorizontalAlignment="Center" Height="65" VerticalAlignment="Center" Width="135" Background="Black" Foreground="White" BorderBrush="Gold" Click="button_Click"/>
         <Button x:Name="matchHistory" Grid.Column ="1" Grid.Row="1" HorizontalAlignment="Center" Height="65" VerticalAlignment="Center" Width="135" Foreground="White" Content="MatchHistory" Background="Black" BorderBrush="Gold" Click="matchHistory_Click"/>
         <Button x:Name="NextPage" Grid.Column ="1" Content="ChampionList" Grid.Row="2" HorizontalAlignment="Center" Height="58"  VerticalAlignment="Center" Width="135" Click="NextPage_Click" />
-
+        <Image x:Name ="profileIcon"  Grid.Row="1" Grid.Column="0" Width="100" Height="100" Source="..\RiotAPI\Aatrox.png" />
+        <Label x:Name ="summonerName" Grid.Row="2" Grid.Column="0" Content = "Placeholder" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Grid>
 </Page>

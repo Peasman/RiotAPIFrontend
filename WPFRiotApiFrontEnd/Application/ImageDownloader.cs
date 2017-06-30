@@ -13,7 +13,8 @@ namespace Core
     {
         private const String CHAMPION_SPLASHART_URL = "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
         private const String CHAMPION_LOADINGSCREEN_ART_URL = "http://ddragon.leagueoflegends.com/cdn/img/champion/";
-        private const String CHAMPION_PORTAIT_URL = "http://ddragon.leagueoflegends.com/cdn/7.11.1/img/champion/";
+        private const String CHAMPION_PORTAIT_URL = "http://ddragon.leagueoflegends.com/cdn/7.12.1/img/champion/";
+        private const String PROFILE_ICON_URL = "http://ddragon.leagueoflegends.com/cdn/7.12.1/img/profileicon/";
         private const String LOCAL_SPLASH_URI = @"Images\Splashs\";
         private const String LOCAL_LOADINGSCREEN_ART_URI = @"Images\LoadingScreenArts\";
         private const String LOCAL_CHAMPION_PORTRAIT_URI = @"Images\Squares\";
@@ -54,16 +55,17 @@ namespace Core
                     }
                 case PROFILE_ICON:
                     {
+                        usedURL = PROFILE_ICON_URL;
                         diskURL = LOCAL_PROFILE_ICON_URI;
                         fileEnding = ".png";
-                        throw new NotImplementedException();
-                        //break;
+                        break;
                     }
             }
             if (!Directory.Exists(diskURL))
             {
                 Directory.CreateDirectory(diskURL);
             }
+            
             String urlEnding = localName + fileEnding;
             usedURL += urlEnding;
             diskURL += urlEnding;

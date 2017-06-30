@@ -21,20 +21,18 @@ namespace Core
             stream = client.GetStream();
             reader = new StreamReader(stream);
             writer = new StreamWriter(stream);
-            //client.Receive(bytes);
-            // m.setText(Encoding.UTF8.GetString(bytes));
-            //  Console.WriteLine(client.Receive(bytes));
         }
         public T convertToJson<T>(String jsonObject)
         {
             return JsonConvert.DeserializeObject<T>(jsonObject);
 
         }
-        public void receiveSummoner()
+        public Summoner receiveSummoner(String name, String region)
         {
+            sendMessage("getSummoner peasman euw");
             String receive = reader.ReadLine();
-            Summoner s = JsonConvert.DeserializeObject<Summoner>(receive);
-            //window.ShowSummoner(s);
+            return JsonConvert.DeserializeObject<Summoner>(receive);
+           
         }
         public String receiveMessage()
         {
@@ -43,7 +41,6 @@ namespace Core
         public void sendMessage(String message)
         {
             writer.WriteLine(message);
-            //window.setText(message);
             writer.Flush();
         }
     }

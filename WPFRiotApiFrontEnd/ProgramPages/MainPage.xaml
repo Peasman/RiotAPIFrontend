@@ -1,0 +1,26 @@
+﻿<Page x:Class="RiotAPIFrontEnd.MainPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RiotAPIFrontEnd"
+        mc:Ignorable="d"
+        Title="SummonerLookup" Height="350" Width="525" Background="Black">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="back" Grid.Column="0" Grid.Row="0" Background="Black" Foreground="White" Content="Back" Width="135" Height="65" BorderBrush="Gold" Click="back_Click"/>
+        <Button x:Name="button" Grid.Row="0" Grid.Column ="1" Content="SummonerLookup" HorizontalAlignment="Center" Height="65" VerticalAlignment="Center" Width="135" Background="Black" Foreground="White" BorderBrush="Gold" Click="button_Click"/>
+        <Button x:Name="matchHistory" Grid.Column ="1" Grid.Row="1" HorizontalAlignment="Center" Height="65" VerticalAlignment="Center" Width="135" Foreground="White" Content="MatchHistory" Background="Black" BorderBrush="Gold" Click="matchHistory_Click"/>
+        <Button x:Name="NextPage" Grid.Column ="1" Content="ChampionList" Grid.Row="2" HorizontalAlignment="Center" Height="58"  VerticalAlignment="Center" Width="135" Click="NextPage_Click" />
+
+    </Grid>
+</Page>

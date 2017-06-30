@@ -3,36 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiotAPIFrontend", "RiotAPIFrontend\RiotAPIFrontend.csproj", "{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiotAPIFrontEnd", "WPFRiotApiFrontEnd\RiotAPIFrontEnd.csproj", "{0DDFB10D-58CF-47C5-8180-5DF62739D738}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|ARM = Debug|ARM
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|ARM = Release|ARM
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Debug|ARM.ActiveCfg = Debug|ARM
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Debug|ARM.Build.0 = Debug|ARM
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Debug|ARM.Deploy.0 = Debug|ARM
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Debug|x64.ActiveCfg = Debug|x64
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Debug|x64.Build.0 = Debug|x64
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Debug|x64.Deploy.0 = Debug|x64
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Debug|x86.ActiveCfg = Debug|x86
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Debug|x86.Build.0 = Debug|x86
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Debug|x86.Deploy.0 = Debug|x86
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Release|ARM.ActiveCfg = Release|ARM
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Release|ARM.Build.0 = Release|ARM
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Release|ARM.Deploy.0 = Release|ARM
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Release|x64.ActiveCfg = Release|x64
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Release|x64.Build.0 = Release|x64
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Release|x64.Deploy.0 = Release|x64
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Release|x86.ActiveCfg = Release|x86
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Release|x86.Build.0 = Release|x86
-		{1DFA3E70-892C-402C-BF4A-C43F6D6B3A40}.Release|x86.Deploy.0 = Release|x86
+		{0DDFB10D-58CF-47C5-8180-5DF62739D738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DDFB10D-58CF-47C5-8180-5DF62739D738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DDFB10D-58CF-47C5-8180-5DF62739D738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DDFB10D-58CF-47C5-8180-5DF62739D738}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
